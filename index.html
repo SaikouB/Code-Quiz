@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Code Quiz</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+	<header>Javascript Code Quiz</header>
+	<main>
+		<section class="container">
+			<div class="quiz">
+				<button id="strt-btn">START QUIZ</button>
+				<div id="question" class="hidden">Question Here</div>
+				<!-- Div for multiple choice options  -->
+				<div id="choices" class="hidden">
+					<button class="btn">Answer 1</button>
+					<button class="btn">Answer 2</button>
+					<button class="btn">Answer 3</button>
+					<button class="btn">Answer 4</button>
+				</div>
+				<h2 id="correct-count">CORRECT: <span class="correct">0</span></h2>
+				<h2 id="incorrect-count">INCORRECT: <span class="incorrect">0</span></h2>
+			</div>
+			<!-- I commented out next button because of code in javascript that loops to next question -->
+			<!-- <button id="nxt-btn">Next Question</button>  -->
+			</div>
+		</section>
+		<!--  -->
+		<aside>
+			<div class="card-timer">
+				<h3>Seconds Remaining</h3>
+				<div id="timer-count">10</div>
+			</div>
+		</aside>
+	</main>
+
+	<footer>
+		2023 &curren; saikou balde
+	</footer>
+
+
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>

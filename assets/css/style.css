@@ -1,0 +1,133 @@
+* {
+    font-family: optima, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hides question text and options-buttons on screen when page first loads before start-quiz-button is clicked */
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194, 176, 70);
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto 50px;
+    padding: 27px;
+    border-radius: 25px;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+header {
+    background: radial-gradient(circle,
+    rgb(194, 176, 70) 0%, darkgreen 100%);
+    font-size: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#strt-btn {
+    font-size: 30px;
+    font-weight:bold;
+    background: radial-gradient(circle,
+    rgb(194, 176, 70) 0%, darkgreen 100%);
+    padding: 15px;
+    margin: 25px auto;
+    margin-top: 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+#strt-btn:hover {
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.24),
+    0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn {
+    background: white;
+    color: black;
+    cursor: pointer;
+    width: 700px;
+    max-width: 800px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    text-align: start;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background: darkgrey;
+    color: white;
+}
+
+#nxt-btn {
+    background: radial-gradient(circle,
+    rgb(194, 176, 70) 0%, darkgreen 100%);
+    padding: 15px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    display: block;
+}
+
+#nxt-btn:hover {
+    background: radial-gradient(circle,
+    darkgreen 0%,  rgb(194, 176, 70) 100%);
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(194, 176, 70);
+    /* width: 100%; */
+    max-width: 800px;
+    margin: 50px auto 50px;
+    padding: 27px;
+    border-radius: 25px;
+}
+#timer-count {
+    font-size: 100px;
+    text-align: center;
+
+}
+
+h2 {
+    background: radial-gradient(circle,
+    rgb(194, 176, 70) 0%, darkgreen 100%);
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+
+}  
+
+#question {
+    padding-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+}
