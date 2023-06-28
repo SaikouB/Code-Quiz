@@ -12,7 +12,7 @@ var presentQuestionIndex = 0;
 var correctCount = 0;
 var incorrectCount = 0;
 var answer = "";
-var timeLeft = 120;
+var timeLeft = 90;
 var endQuiz = false;
 var options = []
 
@@ -183,6 +183,7 @@ function revealQuestion() {
 
 // Stop quiz function and gives feedback
 function stopQuiz() {
+	// When stopQuiz is called set timer to 0
 	timerCountEl.textContent = 0
 	// Hides "#choices" but not "#question" so user can see their score
 	questionEl.textContent = ""
