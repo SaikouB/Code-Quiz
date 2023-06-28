@@ -14,6 +14,12 @@ The user then has the option to save their score on the right side of the page u
 
 ## Webpage Link(URL)
 
+https://saikoub.github.io/Code-Quiz/
+
 ## GitHub Repository Link (URL)
 
+https://github.com/SaikouB/Code-Quiz
+
 ## Webpage screenshot
+
+![Alt text](<Screen Shot 2023-06-28 at 3.17.39 PM.png>)
