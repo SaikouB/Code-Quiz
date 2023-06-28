@@ -4,45 +4,68 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- webpage title (renamed via javascript) -->
 	<title>Code Quiz</title>
+	<!-- Link to external stylesheet -->
 	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+	<!-- Webpage header -->
 	<header>Javascript Code Quiz</header>
+
+	<!-- Link to scores webpage -->
+	<button><a href="score.html">High Scores</a></button>
+
+	<!-- Begin main section -->
 	<main>
+		<!-- Begin quiz section -->
 		<section class="container">
+
 			<div class="quiz">
-				<button id="strt-btn">START QUIZ</button>
+				<h1><button id="strt-btn">START QUIZ</button></h1>
+				<!-- Question div -->
 				<div id="question" class="hidden">Question Here</div>
-				<!-- Div for multiple choice options  -->
+				<!-- Div for multiple choice options buttons -->
 				<div id="choices" class="hidden">
 					<button class="btn">Answer 1</button>
 					<button class="btn">Answer 2</button>
 					<button class="btn">Answer 3</button>
 					<button class="btn">Answer 4</button>
 				</div>
-				<h2 id="correct-count">CORRECT: <span class="correct">0</span></h2>
-				<h2 id="incorrect-count">INCORRECT: <span class="incorrect">0</span></h2>
-			</div>
-			<!-- I commented out next button because of code in javascript that loops to next question -->
-			<!-- <button id="nxt-btn">Next Question</button>  -->
+
+				<!-- div for correct/incorrect count -->
+				<div>
+					<h2 id="correct-count">CORRECT: <span>0</span></h2>
+					<h2 id="incorrect-count">INCORRECT: <span>0</span></h2>
+				</div>
 			</div>
 		</section>
-		<!--  -->
+		<!-- end quiz section -->
+
+		<!-- begin card-timer/save-score aside -->
 		<aside>
 			<div class="card-timer">
 				<h3>Seconds Remaining</h3>
-				<div id="timer-count">10</div>
+				<div id="timer-count">120</div>
+			</div>
+
+			<!-- save score div -->
+			<div class="save-score">
+				<input id="Init-Input" type="text" placeholder="Initials">
+				<button id="save-scr-btn">Save Score</button>
 			</div>
 		</aside>
+		<!-- end of card-timer/save-score aside -->
 	</main>
+	<!-- End main section -->
 
+	<!-- Footer element  -->
 	<footer>
-		2023 &curren; saikou balde
+		2023 &infin; Saikou Balde
 	</footer>
 
-
+	<!-- source for javascript code linked through external file -->
 	<script src="assets/js/script.js"></script>
 </body>
 
